@@ -233,6 +233,7 @@ a:hover {
 
 .user-post h3,img {
     display: inline-block;
+    cursor: pointer;
 }
 
 .user-post img {
