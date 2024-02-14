@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <title>Delaton</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+        <header class="main-nav">
+            <h1>Delaton</h1>
+            <nav class="main-navs">
+                <ul class="main-list-nav">
+                    <li>
+                        <a href="index.html">HomePage</a>
+                    </li>
+                    <li>
+                        <a href="post-page.html">Posts</a>
+                    </li>
+                    <li>
+                        <a href="join-us.html">Join us!</a>
+                    </li>
+                    <li>
+                        <label for="search-bar">Search</label>
+                        <input type="text" name="search bar" id="search-bar">
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contacts-container">
+
+            <h2 id="contacts-form-header">Please fill this form if you need help with our website.</h2>
+
+            <form class="form">
+
+                <label for="contact-name" id="cont-name">Name</label>
+                <input type="text" name="contact-name" id="inputted-name" required placeholder="John Smith"><br>
+
+                <label for="contact-email" id="cont-email">Email</label>
+                <input type="email" name="contact-email" id="inputted-email" required
+                    placeholder="Email@domain.com"><br>
+
+                <label for="message">Concern</label>
+                <textarea name="concern" id="concernArea" cols="40" rows="6" placeholder="Type Here" maxlength="250"
+                    required></textarea>
+
+                <div class="checkbox-container">
+                    <label for="confirm" id="label">Confirm</label>
+                    <input type="checkbox" name="confirm" id="confirm" required><br>
+                </div>
+
+                <input type="submit" name="contacts submit" id="submit">
+            </form>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <span>&copy;2024 Ibrahim Mohamed All Rights Reserved</span>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    <script src="verification.js"></script>
+</body>
+
+</html>

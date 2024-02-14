@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <title>Delaton</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+        <header class="main-nav">
+            <h1>Delaton</h1>
+            <nav class="main-navs">
+                <ul class="main-list-nav">
+                    <li>
+                        <a href="index.html">HomePage</a>
+                    </li>
+                    <li>
+                        <a href="post-page.html">Posts</a>
+                    </li>
+                    <li>
+                        <label for="search-bar">Search</label>
+                        <input type="text" name="search bar" id="search-bar">
+                    </li>
+                </ul>
+            </nav>
+            <a href="contact-us.html"><button>Contact Us</button></a>
+        </header>
+        <main class="join-container">
+
+            <h2 id="new-account-welcome">Create an Account Today!</h2>
+
+            <form class="form">
+
+                <label for="inputed-name" id="new-user-name">Name</label>
+                <input type="text" name="new-input-name" id="inputted-name" required placeholder="John Smith"><br>
+
+                <label for="inputed-email" id="new-email">Email</label>
+                <input type="email" name="new-inputed-email" id="inputted-email" required
+                    placeholder="Email@domain.com"><br>
+
+                <div class="checkbox-container">
+                    <label for="termsAndService" id="conlabel">Agree to Terms and Service</label>
+                    <input type="checkbox" name="confirm" id="confirm" required><br>
+                </div>
+
+                <input type="submit" name="joinSubmit" id="submit">
+            </form>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <span>&copy;2024 Ibrahim Mohamed All Rights Reserved</span>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    <script src="verification.js"></script>
+</body>
+
+</html>
