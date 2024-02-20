@@ -214,4 +214,5 @@ window.addEventListener('scroll', () => {
         display(firstLoad += 5, posts)
     }
 })
+
 display(firstLoad,posts)
