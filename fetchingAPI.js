@@ -1,6 +1,6 @@
-const postsURL = 'https://dummyjson.com/posts'
-const usersURL = 'https://dummyjson.com/users'
-const commentsURL = 'https://dummyjson.com/comments'
+const postsURL = 'https://dummyjson.com/posts?limit=150'
+const usersURL = 'https://dummyjson.com/users?limit=150'
+const commentsURL = 'https://dummyjson.com/comments?limit=150'
 
 async function fetchData(url) {
     
@@ -156,7 +156,7 @@ async function display(startIndex, numberOfPosts){
             commentArticle.appendChild(commentSection)
             articleElement.appendChild(commentArticle)
 
-            const commentUser = user.find(user => user.id === pc.postId)
+            const commentUser = user.find(user => user.id === pc.user.id)
 
             if(commentUser){
                 const userDiv = document.createElement("div")
@@ -178,6 +178,15 @@ async function display(startIndex, numberOfPosts){
                     const userData = user.find(u => u.id === commentUser.id)
                     showModal(userData)
                 })
+            } else {
+                const userDiv = document.createElement("div")
+                const userName = document.createElement("h3")
+
+                userName.className = "commentor-username"
+                userName.textContent = 'Unknown Commenter'
+
+                userDiv.appendChild(userName)
+                commentHeader.appendChild(userDiv)
             }
         })
     })
